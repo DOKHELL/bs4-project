@@ -1,0 +1,43 @@
+files:
+    include: 'app/scss/**/*.scss'
+options:
+    formatter: html
+    output-file: 'sass-lint-global.html'
+    merge-default-rules: false
+rules:
+    zero-unit: 1
+    border-zero:
+        - 1
+        - convention: none
+    leading-zero:
+        - 1
+        - include: false
+    no-empty-rulesets: 1
+    no-duplicate-properties: 1
+    no-misspelled-properties: 1
+    shorthand-values:
+        - 1
+        - allowed-shorthands:
+                - 1
+                - 2
+                - 3
+    trailing-semicolon: 1
+    variable-for-property:
+        - 1
+        - properties: ['color', 'background']
+    no-color-keywords: 1
+    attribute-quotes: 1
+    declarations-before-nesting: 1
+    no-invalid-hex: 1
+    one-declaration-per-line: 1
+    space-after-bang: 1
+    space-after-colon: 1
+    space-before-brace: 1
+    space-between-parens: 1
+    no-transition-all: 1
+    no-universal-selectors: 1
+    no-ids: 1
+    no-important: 1
+    #merge-default-rules: 1
+    #no-mergeable-selectors:
+    #no-css-comments: 1
