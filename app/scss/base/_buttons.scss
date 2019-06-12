@@ -1,0 +1,10 @@
+.btn{
+    padding: 15px 65px;
+    font: 700 14px/24px $open;
+    color: $white;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $white;
+    @include hover-btn;
+}

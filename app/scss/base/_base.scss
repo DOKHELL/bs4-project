@@ -1,4 +1,12 @@
 body{
   font-family: $open;
-  background-color: grey;
+}
+h1.h1{
+  font-size: 72px;
+  letter-spacing: 7.2px;
+}
+p{
+  font-size: 14px;
+  font-family: $source;
+  line-height: 24px;
 }

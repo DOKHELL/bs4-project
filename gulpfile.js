@@ -10,6 +10,17 @@ var gulp = require('gulp'), // Подключаем Gulp
 	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+	pug = require('gulp-pug');
+ 
+
+gulp.task('pug', function() {
+  return gulp.src("app/pages/*.pug")
+      .pipe(pug({
+		  pretty:true
+	  }))
+      .pipe(gulp.dest("app/"))
+      .pipe(browserSync.stream());
+});
 
 gulp.task('scss', function () { // Создаем таск scss
 	return gulp.src('app/scss/**/*.scss') // Берем источник
@@ -30,6 +41,7 @@ gulp.task('browser-sync', function () { // Создаем таск browser-sync
 
 gulp.task('scripts', function () {
 	return gulp.src([
+		"app/libs/slick/slick/slick.min.js",
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js 
@@ -93,10 +105,12 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function () {
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss')); // Наблюдение за scss файлами
 	gulp.watch('app/css/main.css', gulp.parallel('css-min'));
+	gulp.watch('app/modules/*.pug', gulp.parallel('pug'));
+	gulp.watch('app/pages/*.pug', gulp.parallel('pug'));
 	gulp.watch('app/css/*.min.css', gulp.parallel('css'));
 	gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch', 'css-min'));
+gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch', 'css-min','pug','scripts'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'scss', 'scripts', "img"));

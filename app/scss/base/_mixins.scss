@@ -1,16 +1,34 @@
-@mixin transition(
-	$properties: all,
-	$duration: .5s,
-	$method: ease,
-	$delay: 0s) {
-		$value: ();
-		@each $property in $properties {
-			@if length($value) > 0 {
-				$value: append($value, unquote(",") #{$property} $duration $method $delay);
-			}
-			@else {
-				$value: append($value, #{$property} $duration $method $delay);
-			}
-		}
-		transition: $value;
+@mixin transition($properties: all, $duration: 0.5s, $method: ease, $delay: 0s) {
+  $value: ();
+  @each $property in $properties {
+    @if length($value) > 0 {
+      $value: append($value, unquote(",") #{$property} $duration $method $delay);
+    } @else {
+      $value: append($value, #{$property} $duration $method $delay);
+    }
+  }
+  transition: $value;
+}
+@mixin beveled-corners($bg, $tl: 0, $tr: $tl, $br: $tl, $bl: $tr) {
+  &:after {
+    content: "";
+    position: absolute;
+    background: $bg;
+    background: linear-gradient(-7.5deg, transparent $br, $bg 0) right,
+      linear-gradient(7.5deg, transparent $bl, $bg 0) left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@mixin hover-btn {
+  &:hover {
+    background-color: $orange;
+    border-color: $orange;
+    color: inherit;
+  }
 }
