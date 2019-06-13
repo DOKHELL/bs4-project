@@ -1,0 +1,49 @@
+.about{
+    padding: 95px 0 110px;
+}
+.about__item{
+    padding-top: 100px;
+    position: relative;
+    color: $grey-text;
+    &:hover{
+        .h3{
+            color: $orange;
+        }
+        &:after,&:before{
+            color: $orange;
+        }
+        &:after{
+            transform: rotate(45deg);
+        }
+    }
+    p{
+        font-family: $source;
+    }
+    .h3{
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1.35px;
+        color: $grey-text2;
+        transition: color .7s ease;
+    }
+    &:before{
+        position: absolute;
+        content: "\e901";
+        font-family: $ico;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        transition: color .7s ease-in-out;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 70px;
+        border: 1px solid $grey-bord;
+        top: 0;
+        left: 37.5%;
+        transition: transform .6s ease-in-out,color .7s ease-in-out;
+    }
+}

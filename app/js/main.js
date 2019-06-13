@@ -19,15 +19,12 @@ function initHolderBg() {
             backgroundPosition: '50% 50%',
             zIndex: '1',
             backgroundRepeat: 'no-repeat',
-            height: '100%'
+            height: '1000px'
         });
         img.remove();
         }
     });
 }
-
-
-
 
 
 

@@ -1,15 +1,21 @@
 //Colors
 $black: #000;
 $white: #fff;
+$grey: #706964;
 $white-color: #f4f5f9;
 $hover-color: #e74c3c;
-$bg-colorimg: rgba(0, 0, 0, .678);
+$bg-colorimg: rgba(0, 0, 0, 0.678);
 $choco-color: #cbc6c0;
+$grey-bord: #e5e5e5;
+$grey-text: #999999;
+$grey-text2: #6a6a6a;
 $orange: #e74c3c;
+$dark: #202020;
 
 //font
-$open: 'Open Sans', sans-serif;
-$source: 'Source Sans Pro', sans-serif;
+$open: "Open Sans", sans-serif;
+$source: "Source Sans Pro", sans-serif;
+$ico: "icomoon";
 //fz
 
 ///media screen
@@ -18,3 +24,30 @@ $default: 1200px;
 $medium: 1024px;
 $small: 768px;
 $tiny: 420px;
+
+//separator
+
+.separator {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -43px;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $orange;
+  }
+}
