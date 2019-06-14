@@ -1,6 +1,10 @@
 .slider {
   position: relative;
 }
+.slick-initialized .slick-slide{
+  outline: none;
+  border: none;
+}
 .slider__item {
   position: relative;
   height: 1000px;
@@ -22,6 +26,7 @@
 .slider__item-img {
   position: relative;
   z-index: 1;
+  outline: none;
 }
 .slider__content {
   max-width: 800px;
@@ -40,6 +45,11 @@
   .h1 {
     margin-bottom: 75px;
   }
+  .separator{
+    &:after{
+    background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
+    }
+  }
   p {
     max-width: 590px;
     margin: 0 auto 60px;
@@ -47,6 +57,10 @@
   }
   .btn {
     margin: 0 15px;
+    padding: 15px 65px;
+    background-color: transparent;
+    border: 1px solid $white;
+    @include hover-btn;
     &:first-child {
       padding: 15px 45px;
     }
@@ -84,7 +98,7 @@
     left: 0;
     border: none;
     border-radius: 50%;
-    transition: color  .7s;
+    @include transition(color background-color)
   }
 }
 .slick-prev {
@@ -102,23 +116,24 @@
   height: 65px;
   background-color: $white-color;
   z-index: 6;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: -35px;
   box-shadow: 0px 0px 2px 5px rgba(244,245,249,0.6);
-  transition: background-color linear .9s,box-shadow .9s;
+  @include transition(background-color box-shadow);
   &:hover{
     box-shadow: 0px 0px 6px 5px rgba(244,245,249,0.6);
     background-color: $white;
   }
-  &:after{
-    content: "\e90a";
-    font-family: $ico;
+  &:before{
     position: absolute;
     color: $orange;
     font-size: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
+    left: 0;
+    right: 0;
+    width: 30px;
+    margin: auto;
+    top: 25%;
   }
 }

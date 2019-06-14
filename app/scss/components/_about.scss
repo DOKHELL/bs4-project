@@ -1,5 +1,8 @@
 .about{
     padding: 95px 0 110px;
+    .border-bottom{
+        border-color: $grey-text2;
+    }
 }
 .about__item{
     padding-top: 100px;
@@ -24,7 +27,21 @@
         font-weight: 600;
         letter-spacing: 1.35px;
         color: $grey-text2;
-        transition: color .7s ease;
+        @include transition(color);
+        position: relative;
+        margin-bottom: 35px;
+        &:after{
+            content: "";
+            width: 40px;
+            height: 1px;
+            background-color: $grey-text2;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+            margin: auto;
+
+        }
     }
     &:before{
         position: absolute;
@@ -34,7 +51,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 40px;
-        transition: color .7s ease-in-out;
+        @include transition(color);
     }
     &:after{
         position: absolute;
@@ -43,7 +60,9 @@
         height: 70px;
         border: 1px solid $grey-bord;
         top: 0;
-        left: 37.5%;
-        transition: transform .6s ease-in-out,color .7s ease-in-out;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include transition(transform color);
     }
 }

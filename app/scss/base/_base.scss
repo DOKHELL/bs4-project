@@ -9,4 +9,30 @@ p{
   font-size: 14px;
   font-family: $source;
   line-height: 24px;
+  color: $grey-text;
+}
+h2.h2{
+  font-family: $source;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 3.6px;
+  color: $grey-text2;
+}
+a{
+  outline: none;
+}
+.btn.focus, .btn:focus{
+  box-shadow: none;
+}
+img{
+  width: 100%;
+}
+.title__holder{
+  margin-bottom: 90px;
+}
+button{
+  outline: none;
+  &:focus{
+    outline: none;
+  }
 }

@@ -11,6 +11,7 @@ $grey-text: #999999;
 $grey-text2: #6a6a6a;
 $orange: #e74c3c;
 $dark: #202020;
+$dots: #3e3e3e;
 
 //font
 $open: "Open Sans", sans-serif;
@@ -37,7 +38,7 @@ $tiny: 420px;
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
+    background: linear-gradient(to right, $grey-text 41%, transparent 0, transparent 58%, $grey-text 41%);
   }
   &:before {
     content: "";
@@ -51,3 +52,18 @@ $tiny: 420px;
     background-color: $orange;
   }
 }
+.h2-line {
+  position: relative;
+  padding-left: 35px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 36px;
+    background-color: $orange;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+

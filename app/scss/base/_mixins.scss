@@ -1,4 +1,4 @@
-@mixin transition($properties: all, $duration: 0.5s, $method: ease, $delay: 0s) {
+@mixin transition($properties: all, $duration: 0.5s, $method: ease-in-out, $delay: 0s) {
   $value: ();
   @each $property in $properties {
     @if length($value) > 0 {
@@ -30,5 +30,12 @@
     background-color: $orange;
     border-color: $orange;
     color: inherit;
+    opacity: 1;
+  }
+}
+@mixin hover-btn2 {
+  &:hover {
+    opacity: .8;
+    color: $white;
   }
 }
