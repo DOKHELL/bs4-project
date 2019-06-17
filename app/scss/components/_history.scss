@@ -4,9 +4,5 @@
         margin: 0 15px;
         padding: 15px 45px;
         color: $white;
-        @include transition(opacity);
-        &:hover{
-            opacity: .8;
-        }
     }
 }

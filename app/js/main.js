@@ -4,7 +4,7 @@ function slider() {
       prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
       nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
     });
-  };
+};
 
 function initHolderBg() {
     "use strict";
@@ -24,7 +24,7 @@ function initHolderBg() {
         img.remove();
         }
     });
-}
+};
 
 function sliderServices() {
     $('.services__items').slick({
@@ -33,9 +33,9 @@ function sliderServices() {
       vertical: true,
       verticalSwiping: true,
     });
-  };
+};
 
-  function initHolderBg2() {
+function initHolderBg2() {
     "use strict";
     $('.services__item .services__image .services__image-inner').each(function () {
         var imgHolder = $(this),
@@ -53,7 +53,7 @@ function sliderServices() {
         img.remove();
         }
     });
-}
+};
 
 function initHolderBg3() {
   "use strict";
@@ -73,7 +73,8 @@ function initHolderBg3() {
       img.remove();
       }
   });
-}
+};
+
 function slider2() {
   $('.study__items').slick({
     arrows: false,
@@ -81,6 +82,25 @@ function slider2() {
   });
 };
 
+function initHolderBg4() {
+    "use strict";
+    $('.statistic .statistic__wrap .statistic__image').each(function () {
+        var imgHolder = $(this),
+        img = imgHolder.find('img'),
+        imgSrc = img.attr('src');
+        if (!!imgHolder.length && !!img.length && !!imgSrc) {
+        imgHolder.css({
+            backgroundImage: 'url(' + imgSrc + ')',
+            backgroundSize: 'cover',
+            backgroundPosition: '50% 50%',
+            zIndex: '1',
+            backgroundRepeat: 'no-repeat',
+            height: '100%'
+        });
+        img.remove();
+        }
+    });
+}
 
 //Runs
 $(document).ready(function () {
@@ -89,7 +109,8 @@ $(document).ready(function () {
     sliderServices();
     initHolderBg2();
     initHolderBg3();
-    slider2();
+	slider2();
+	initHolderBg4();
 
 
 

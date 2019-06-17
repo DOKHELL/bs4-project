@@ -1,0 +1,25 @@
+.form-contact{
+	background-color: $white-color;
+}
+.contacts{
+	background-color: $white;
+	padding: 90px 80px;
+	dt{
+		font-weight: 600;
+		font-size: 24px;
+		font-family: $source;
+		color: $orange;
+		margin-bottom: 15px;
+	}
+	dd,dd a{
+		font-size: 18px;
+		color: $grey;
+		display: block;
+	}
+	dd a{
+		@include transition(opacity);
+		&:hover{
+			opacity: .7;
+		}
+	}
+}

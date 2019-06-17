@@ -1,0 +1,110 @@
+.team {
+  background-image: url("../img/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  .team__graf {
+    width: 100%;
+    order: 2;
+    position: relative;
+  }
+  .team__graf-img {
+    img {
+      height: 500px;
+    }
+  }
+  .title__holder {
+    margin-top: 140px;
+    margin-bottom: -50px;
+  }
+  .separator {
+    &:after {
+      background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
+    }
+  }
+  p {
+    color: $white;
+  }
+}
+.team-person {
+  position: absolute;
+  left: 15%;
+  bottom: 35px;
+  z-index: 6;
+  &:nth-of-type(2) {
+    left: 30%;
+    bottom: 80px;
+  }
+  &:nth-of-type(3) {
+    left: 45%;
+    bottom: 90px;
+  }
+  &:nth-of-type(4) {
+    left: 65%;
+	bottom: 60px;
+  }
+  &:nth-of-type(5) {
+    left: 85%;
+    bottom: 160px;
+  }
+  &:hover {
+    .team__image {
+	  width: 70px;
+      box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.4);
+    }
+    .team__info {
+      opacity: 1;
+      visibility: visible;
+    }
+    .team__image {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.team__info {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  @include transition(opacity visibility);
+  .h5 {
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    color: $orange;
+    font-weight: 600;
+  }
+  p {
+    color: $white;
+    letter-spacing: 1.4px;
+    font-family: $source;
+  }
+}
+.team__image {
+  width: 50px;
+  border: 3px solid $orange;
+  border-radius: 50%;
+  margin: 0 auto 65px;
+  cursor: pointer;
+  position: relative;
+  @include transition(width box-shadow);
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    margin: auto;
+    bottom: -54px;
+    left: 0;
+    right: 0;
+    background-color: $white-color;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    @include transition(opacity visibility);
+  }
+}

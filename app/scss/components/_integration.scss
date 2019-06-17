@@ -1,0 +1,27 @@
+.integration{
+	padding: 140px 0 120px;
+	background-color: $white-color;
+	border-bottom: 1px solid $grey-bord;
+	.integration__wrap{
+		background-color: $white;
+		height: 100px;
+		padding: 20px 0;
+		@include transition(background-color);
+		&:hover{
+			background-color: $orange;
+			&::before{
+				color: $white;
+			}
+		}
+		&:before{
+			font-size: 80px;
+			position: absolute;
+			color: $grey-text;
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			@include transition(color);
+		}
+	}
+}

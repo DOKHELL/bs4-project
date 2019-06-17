@@ -4,8 +4,9 @@
     color: $white;
     text-transform: uppercase;
     outline: none;
-    cursor: pointer;
+	cursor: pointer;
+	border: none;
     background-color: $orange;
     @include hover-btn2;
-    @include transition(color opacity background-color border-color)
+    @include transition(color background-color opacity border-color)
 }
