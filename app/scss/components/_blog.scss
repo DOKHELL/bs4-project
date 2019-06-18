@@ -1,6 +1,9 @@
 .blog {
-  padding: 100px 0 85px;
+  padding: 100px 0 0;
   background-color: $white-color;
+  .row{
+	  margin: 0;
+  }
   .col-6 {
     display: flex;
     padding: 0;

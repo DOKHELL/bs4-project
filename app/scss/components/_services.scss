@@ -11,7 +11,7 @@
     padding: 0;
     position: absolute;
     top: 50%;
-    left: 50px;
+    left: 20px;
     transform: translateY(-50%);
     li {
       cursor: pointer;
@@ -40,6 +40,7 @@
 }
 .services__item {
   display: flex !important;
+  padding: 0;
 }
 .services__inner,
 .services__image {
@@ -47,7 +48,7 @@
   width: 100%;
 }
 .services__info {
-  padding: 140px 0;
+  padding: 140px 0 140px 40px;
 }
 .services__inner {
   background-color: $dark;

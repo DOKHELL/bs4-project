@@ -1,8 +1,17 @@
 .form-contact{
 	background-color: $white-color;
+	padding: 135px 0 145px;
+	.form,.contacts{
+		background-color: $white;
+	}
+	.form{
+		padding: 80px 95px;
+		textarea{
+			margin-bottom: 20px;
+		}
+	}
 }
 .contacts{
-	background-color: $white;
 	padding: 90px 80px;
 	dt{
 		font-weight: 600;

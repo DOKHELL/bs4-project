@@ -15,59 +15,63 @@
 <body>
   <div id="main">
     <header class="header">
-      <div class="container">
-        <div class="row justify-content-between align-items-center"><a class="col-2 align-self-start" href="#"><img src="img/logo.png" alt=""></a>
-          <div class="col-5-7"></div>
-          <ul class="nav text-uppercase font-weight-bold">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">about us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container"><a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon-star"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto justify-content-around text-uppercase">
+              <li class="nav-item"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">about us<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">portfolio<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">pricing<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">team<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">blog<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">contact<span class="sr-only">(current)</span></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <section class="slider"> 
-      <div class="slider__items">
-        <div class="slider__item">
-          <div class="slider__item-img"><img src="img/slider-bg.png"></div>
-          <div class="slider__content"><span>Our Clients Are Our First Priority</span>
-            <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <div class="slider__button"><a class="btn" href="#">GET STARTED NOW</a><a class="btn" href="#">LEARN MORE</a></div>
+    <section class="slider">
+      <div class="container-fluid">
+        <div class="row slider__items">
+          <div class="col slider__item">
+            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__content"><span>Our Clients Are Our First Priority</span>
+              <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div class="slider__button"><a class="btn mb-3" href="#">GET STARTED NOW</a><a class="btn mb-3" href="#">LEARN MORE</a></div>
+            </div>
           </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-img"><img src="img/slider-bg.png"></div>
-          <div class="slider__content"><span>Our Clients Are Our First Priority</span>
-            <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <div class="slider__button"><a class="btn" href="#">GET STARTED NOW</a><a class="btn" href="#">LEARN MORE</a></div>
+          <div class="col slider__item">
+            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__content"><span>Our Clients Are Our First Priority</span>
+              <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div class="slider__button"><a class="btn mb-3" href="#">GET STARTED NOW</a><a class="btn mb-3" href="#">LEARN MORE</a></div>
+            </div>
           </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-img"><img src="img/slider-bg.png"></div>
-          <div class="slider__content"><span>Our Clients Are Our First Priority</span>
-            <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <div class="slider__button"><a class="btn" href="#">GET STARTED NOW</a><a class="btn" href="#">LEARN MORE</a></div>
+          <div class="col-12 slider__item">
+            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__content"><span>Our Clients Are Our First Priority</span>
+              <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div class="slider__button"><a class="btn mb-3" href="#">GET STARTED NOW</a><a class="btn mb-3" href="#">LEARN MORE</a></div>
+            </div>
           </div>
-        </div>
-      </div><a class="anchor icon-anchor rounded-circle" href="#"></a>
+        </div><a class="anchor icon-anchor rounded-circle" href="#"></a>
+      </div>
     </section>
     <section class="about border-bottom">
       <div class="container">
         <div class="row mx-auto text-center"><a class="col-3 text-decoration-none about__item text-reset" href="#">
-            <h3 class="h3 text-uppercase">Sleek design</h3>
+            <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
             <p class="font-weight-light">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p></a><a class="col-3 text-decoration-none about__item text-reset" href="#">
-            <h3 class="h3 text-uppercase">Sleek design</h3>
+            <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
             <p class="font-weight-light">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p></a><a class="col-3 text-decoration-none about__item text-reset" href="#">
-            <h3 class="h3 text-uppercase">Sleek design</h3>
+            <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
             <p class="font-weight-light">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p></a><a class="col-3 text-decoration-none about__item text-reset" href="#">
-            <h3 class="h3 text-uppercase">Sleek design</h3>
+            <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
             <p class="font-weight-light">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p></a></div>
       </div>
     </section>
@@ -86,129 +90,133 @@
       </div>
     </section>
     <section class="services">
-      <div class="services__items">
-        <div class="services__item">
-          <div class="services__inner text-right">
-            <div class="services__info">
-              <h2 class="h2 text-uppercase h2-line">our services</h2>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-            </div>
-          </div>
-          <div class="services__image">
-            <div class="services__image-inner"><img src="img/services-img.jpg"></div>
-          </div>
-        </div>
-        <div class="services__item">
-          <div class="services__inner text-right">
-            <div class="services__info">
-              <h2 class="h2 text-uppercase h2-line">our services</h2>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+      <div class="container-fluid">
+        <div class="row services__items">
+          <div class="col services__item">
+            <div class="services__inner text-right">
+              <div class="services__info">
+                <h2 class="h2 text-uppercase h2-line">our services</h2>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="services__image">
-            <div class="services__image-inner"><img src="img/services-img.jpg"></div>
-          </div>
-        </div>
-        <div class="services__item">
-          <div class="services__inner text-right">
-            <div class="services__info">
-              <h2 class="h2 text-uppercase h2-line">our services</h2>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
-              <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
-                <h5 class="h5 text-uppercase">Web design</h5>
-                <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
-              </div>
+            <div class="services__image">
+              <div class="services__image-inner"><img src="img/services-img.jpg"></div>
             </div>
           </div>
-          <div class="services__image">
-            <div class="services__image-inner"><img src="img/services-img.jpg"></div>
+          <div class="col services__item">
+            <div class="services__inner text-right">
+              <div class="services__info">
+                <h2 class="h2 text-uppercase h2-line">our services</h2>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__image">
+              <div class="services__image-inner"><img src="img/services-img.jpg"></div>
+            </div>
+          </div>
+          <div class="col services__item">
+            <div class="services__inner text-right">
+              <div class="services__info">
+                <h2 class="h2 text-uppercase h2-line">our services</h2>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="services__content"><a class="anchor icon-camera rounded-circle" href="#"></a>
+                  <h5 class="h5 text-uppercase">Web design</h5>
+                  <p class="pl-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__image">
+              <div class="services__image-inner"><img src="img/services-img.jpg"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="works">
-      <div class="title__holder separator">
-        <h2 class="h2 text-uppercase">recent works</h2>
-        <p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
-      </div>
-      <div class="mix-button">
-        <button class="text-uppercase mixitup-control-active" type="button" data-filter="all">All</button>
-        <button class="text-uppercase" type="button" data-filter=".print">print design</button>
-        <button class="text-uppercase" type="button" data-filter=".animation">Animation</button>
-        <button class="text-uppercase" type="button" data-filter=".art">Art</button>
-        <button class="text-uppercase" type="button" data-filter=".web">Web design</button>
-        <button class="text-uppercase" type="button" data-filter=".photo">Photography</button>
-        <button class="text-uppercase" type="button" data-filter=".video">video</button>
-      </div>
-      <div class="mix-list">
-        <div class="mix print video">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-1.jpg"></a>
+      <div class="container-fluid">
+        <div class="title__holder separator">
+          <h2 class="h2 text-uppercase">recent works</h2>
+          <p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
         </div>
-        <div class="mix art photo animation">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-2.jpg"></a>
+        <div class="mix-button">
+          <button class="text-uppercase mixitup-control-active" type="button" data-filter="all">All</button>
+          <button class="text-uppercase" type="button" data-filter=".print">print design</button>
+          <button class="text-uppercase" type="button" data-filter=".animation">Animation</button>
+          <button class="text-uppercase" type="button" data-filter=".art">Art</button>
+          <button class="text-uppercase" type="button" data-filter=".web">Web design</button>
+          <button class="text-uppercase" type="button" data-filter=".photo">Photography</button>
+          <button class="text-uppercase" type="button" data-filter=".video">video</button>
         </div>
-        <div class="mix print web">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-1.jpg"></a>
-        </div>
-        <div class="mix art video animation">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-2.jpg"></a>
-        </div>
-        <div class="mix print photo web">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-1.jpg"></a>
-        </div>
-        <div class="mix art video animation">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-2.jpg"></a>
-        </div>
-        <div class="mix web art">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-1.jpg"></a>
-        </div>
-        <div class="mix web video animation">
-          <div class="mix-label">
-            <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
-          </div><a href="#"><img src="img/miximg-2.jpg"></a>
+        <div class="row mix-list">
+          <div class="col-3 mix print video">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-1.jpg"></a>
+          </div>
+          <div class="col-3 mix art photo animation">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-2.jpg"></a>
+          </div>
+          <div class="col-3 mix print web">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-1.jpg"></a>
+          </div>
+          <div class="col-3 mix art video animation">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-2.jpg"></a>
+          </div>
+          <div class="col-3 mix print photo web">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-1.jpg"></a>
+          </div>
+          <div class="col-3 mix art video animation">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-2.jpg"></a>
+          </div>
+          <div class="col-3 mix web art">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-1.jpg"></a>
+          </div>
+          <div class="col-3 mix web video animation">
+            <div class="mix-label">
+              <h4 class="h4 text-uppercase">T-shirt design</h4><span class="mix-skill">art/t-shirt</span>
+            </div><a href="#"><img src="img/miximg-2.jpg"></a>
+          </div>
         </div>
       </div>
     </section>
@@ -218,8 +226,8 @@
           <h2 class="h2 text-uppercase">case study</h2>
           <p>A brief story about how this process works, keep an eye till the end.</p>
         </div>
-        <div class="study__items">
-          <div class="study__item">
+        <div class="row study__items">
+          <div class="col study__item">
             <div class="study__wrap">
               <div class="study__content icon-bulb">
                 <h5 class="h5 text-uppercase">aCCUMULATE CREATIVE IDEAS</h5>
@@ -230,7 +238,7 @@
               <div class="study-img"><img src="img/study-bg.jpg"></div>
             </div>
           </div>
-          <div class="study__item">
+          <div class="col study__item">
             <div class="study__wrap">
               <div class="study__content icon-bulb">
                 <h5 class="h5 text-uppercase">aCCUMULATE CREATIVE IDEAS</h5>
@@ -241,7 +249,7 @@
               <div class="study-img"><img src="img/study-bg.jpg"></div>
             </div>
           </div>
-          <div class="study__item">
+          <div class="col study__item">
             <div class="study__wrap">
               <div class="study__content icon-bulb">
                 <h5 class="h5 text-uppercase">aCCUMULATE CREATIVE IDEAS</h5>
@@ -427,12 +435,34 @@
               <input placeholder="Name" type="text">
               <input placeholder="Email" type="email">
               <input placeholder="Subject" type="text">
-              <textarea placeholder="Message"></textarea><a class="text-uppercase btn" href="#">Send message</a>
+              <textarea placeholder="Message"></textarea>
+              <button class="text-uppercase btn">Send message</button>
             </form>
           </div>
         </div>
       </div>
     </section>
+    <section class="trial-test text-center">
+      <div class="container">
+        <h3 class="h3">Let's Get Started Now. <span class="font-weight-bold">It's FREE!</span></h3>
+        <p>30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.</p><a class="btn text-uppercase" href="#">start free trial</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <ul class="col-3">
+            <li><a class="icon-skype" href="#"></a></li>
+            <li><a class="icon-google" href="#"></a></li>
+            <li><a class="icon-skype" href="#"></a></li>
+            <li><a class="icon-google" href="#"></a></li>
+            <li><a class="icon-skype" href="#"></a></li>
+            <li><a class="icon-google" href="#"></a></li>
+          </ul>
+          <div class="col-3 text-right"><span>Kazi Erfan © All Rights Reserved </span></div>
+        </div>
+      </div>
+    </footer>
   </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
 <script src="libs/bootstrap-4/js/bootstrap.min.js"></script>

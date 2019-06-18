@@ -1,22 +1,30 @@
 header.header
-    .container
-        .row.justify-content-between.align-items-center
-            a.col-2.align-self-start(href="#")
-                img(src="img/logo.png" alt="")
-            .col-5-7
-            ul.nav.text-uppercase.font-weight-bold
-                li.nav-item
-                    a.nav-link(href="#") Home
-                li.nav-item
-                    a.nav-link(href="#") about us
-                li.nav-item
-                    a.nav-link(href="#") portfolio
-                li.nav-item
-                    a.nav-link(href="#") pricing
-                li.nav-item
-                    a.nav-link(href="#") team
-                li.nav-item
-                    a.nav-link(href="#") blog
-                li.nav-item
-                    a.nav-link(href="#") contact
-                    
+	nav.navbar.navbar-expand-lg.bg-dark.fixed-top
+		.container
+			a.navbar-brand(href="#")
+				img(src="img/logo.png")
+			button.navbar-toggler(type="button" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation")
+				span.navbar-toggler-icon.icon-star
+			.collapse.navbar-collapse#navbarNav
+				ul.navbar-nav.ml-auto.justify-content-around.text-uppercase
+					li.nav-item
+						a.nav-link(href="#") Home
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") about us
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") portfolio
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") pricing
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") team
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") blog
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") contact
+							span.sr-only (current)

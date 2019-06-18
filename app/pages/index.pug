@@ -16,53 +16,54 @@ doctype html
 body
 	div#main
 		include ../modules/header
-		section.slider 
-			.slider__items
-				.slider__item
-					.slider__item-img
-						img(src="img/slider-bg.png")
-					.slider__content
-						span Our Clients Are Our First Priority
-						h1.h1.font-weight-bold.separator WELCOME TO BINO
-						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						.slider__button
-							a.btn(href="#") GET STARTED NOW
-							a.btn(href="#") LEARN MORE
-				.slider__item
-					.slider__item-img
-						img(src="img/slider-bg.png")
-					.slider__content
-						span Our Clients Are Our First Priority
-						h1.h1.font-weight-bold.separator WELCOME TO BINO
-						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						.slider__button
-							a.btn(href="#") GET STARTED NOW
-							a.btn(href="#") LEARN MORE
-				.slider__item
-					.slider__item-img
-						img(src="img/slider-bg.png")
-					.slider__content
-						span Our Clients Are Our First Priority
-						h1.h1.font-weight-bold.separator WELCOME TO BINO
-						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						.slider__button
-							a.btn(href="#") GET STARTED NOW
-							a.btn(href="#") LEARN MORE
-			a.anchor.icon-anchor.rounded-circle(href="#")
+		section.slider
+			.container-fluid
+				.row.slider__items
+					.col.slider__item
+						.slider__item-img
+							img(src="img/slider-bg.png")
+						.slider__content
+							span Our Clients Are Our First Priority
+							h1.h1.font-weight-bold.separator WELCOME TO BINO
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							.slider__button
+								a.btn.mb-3(href="#") GET STARTED NOW
+								a.btn.mb-3(href="#") LEARN MORE
+					.col.slider__item
+						.slider__item-img
+							img(src="img/slider-bg.png")
+						.slider__content
+							span Our Clients Are Our First Priority
+							h1.h1.font-weight-bold.separator WELCOME TO BINO
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							.slider__button
+								a.btn.mb-3(href="#") GET STARTED NOW
+								a.btn.mb-3(href="#") LEARN MORE
+					.col-12.slider__item
+						.slider__item-img
+							img(src="img/slider-bg.png")
+						.slider__content
+							span Our Clients Are Our First Priority
+							h1.h1.font-weight-bold.separator WELCOME TO BINO
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							.slider__button
+								a.btn.mb-3(href="#") GET STARTED NOW
+								a.btn.mb-3(href="#") LEARN MORE
+				a.anchor.icon-anchor.rounded-circle(href="#")
 		section.about.border-bottom
 			.container
 				.row.mx-auto.text-center
 					a(href="#").col-3.text-decoration-none.about__item.text-reset
-						h3.h3.text-uppercase Sleek design
+						h3.matchheight1.h3.text-uppercase Sleek design
 						p.font-weight-light Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 					a(href="#").col-3.text-decoration-none.about__item.text-reset
-						h3.h3.text-uppercase Sleek design
+						h3.matchheight1.h3.text-uppercase Sleek design
 						p.font-weight-light Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 					a(href="#").col-3.text-decoration-none.about__item.text-reset
-						h3.h3.text-uppercase Sleek design
+						h3.matchheight1.h3.text-uppercase Sleek design
 						p.font-weight-light Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 					a(href="#").col-3.text-decoration-none.about__item.text-reset
-						h3.h3.text-uppercase Sleek design
+						h3.matchheight1.h3.text-uppercase Sleek design
 						p.font-weight-light Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 		section.history
 			.container
@@ -76,132 +77,134 @@ body
 						p.mb-5 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 						a.btn(href="#") Browse our Work
 		section.services
-			.services__items
-				.services__item
-					.services__inner.text-right
-						.services__info
-							h2.h2.text-uppercase.h2-line our services
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
-				.services__item
-					.services__inner.text-right
-						.services__info
-							h2.h2.text-uppercase.h2-line our services
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
-				.services__item
-					.services__inner.text-right
-						.services__info
-							h2.h2.text-uppercase.h2-line our services
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
+			.container-fluid
+				.row.services__items
+					.col.services__item
+						.services__inner.text-right
+							.services__info
+								h2.h2.text-uppercase.h2-line our services
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+						.services__image
+							.services__image-inner
+								img(src="img/services-img.jpg")
+					.col.services__item
+						.services__inner.text-right
+							.services__info
+								h2.h2.text-uppercase.h2-line our services
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+						.services__image
+							.services__image-inner
+								img(src="img/services-img.jpg")
+					.col.services__item
+						.services__inner.text-right
+							.services__info
+								h2.h2.text-uppercase.h2-line our services
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								.services__content
+									a.anchor.icon-camera.rounded-circle(href="#")
+									h5.h5.text-uppercase Web design
+									p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+						.services__image
+							.services__image-inner
+								img(src="img/services-img.jpg")
 		section.works
-			.title__holder.separator
-				h2.h2.text-uppercase recent works
-				p It has survived not only five centuries, but also the leap scrambled it to make a type.
-			.mix-button
-				button.text-uppercase.mixitup-control-active(type="button" data-filter="all") All
-				button.text-uppercase(type="button" data-filter=".print") print design
-				button.text-uppercase(type="button" data-filter=".animation") Animation
-				button.text-uppercase(type="button" data-filter=".art") Art
-				button.text-uppercase(type="button" data-filter=".web") Web design
-				button.text-uppercase(type="button" data-filter=".photo") Photography
-				button.text-uppercase(type="button" data-filter=".video") video
-			.mix-list
-				.mix.print.video
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-1.jpg")
-				.mix.art.photo.animation
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-2.jpg")
-				.mix.print.web
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-1.jpg")
-				.mix.art.video.animation
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-2.jpg")
-				.mix.print.photo.web
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-1.jpg")
-				.mix.art.video.animation
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-2.jpg")
-				.mix.web.art
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-1.jpg")
-				.mix.web.video.animation
-					.mix-label
-						h4.h4.text-uppercase T-shirt design
-						span.mix-skill art/t-shirt
-					a(href="#")
-						img(src="img/miximg-2.jpg")            
+			.container-fluid
+				.title__holder.separator
+					h2.h2.text-uppercase recent works
+					p It has survived not only five centuries, but also the leap scrambled it to make a type.
+				.mix-button
+					button.text-uppercase.mixitup-control-active(type="button" data-filter="all") All
+					button.text-uppercase(type="button" data-filter=".print") print design
+					button.text-uppercase(type="button" data-filter=".animation") Animation
+					button.text-uppercase(type="button" data-filter=".art") Art
+					button.text-uppercase(type="button" data-filter=".web") Web design
+					button.text-uppercase(type="button" data-filter=".photo") Photography
+					button.text-uppercase(type="button" data-filter=".video") video
+				.row.mix-list
+					.col-3.mix.print.video
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-1.jpg")
+					.col-3.mix.art.photo.animation
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-2.jpg")
+					.col-3.mix.print.web
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-1.jpg")
+					.col-3.mix.art.video.animation
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-2.jpg")
+					.col-3.mix.print.photo.web
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-1.jpg")
+					.col-3.mix.art.video.animation
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-2.jpg")
+					.col-3.mix.web.art
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-1.jpg")
+					.col-3.mix.web.video.animation
+						.mix-label
+							h4.h4.text-uppercase T-shirt design
+							span.mix-skill art/t-shirt
+						a(href="#")
+							img(src="img/miximg-2.jpg")            
 		section.study.text-center
 			.container
 				.title__holder.separator
 					h2.h2.text-uppercase case study
 					p A brief story about how this process works, keep an eye till the end.
-				.study__items
-					.study__item
+				.row.study__items
+					.col.study__item
 						.study__wrap
 							.study__content.icon-bulb
 								h5.h5.text-uppercase aCCUMULATE CREATIVE IDEAS
@@ -210,7 +213,7 @@ body
 						.study__inner
 							.study-img
 								img(src="img/study-bg.jpg")
-					.study__item
+					.col.study__item
 						.study__wrap
 							.study__content.icon-bulb
 								h5.h5.text-uppercase aCCUMULATE CREATIVE IDEAS
@@ -219,7 +222,7 @@ body
 						.study__inner
 							.study-img
 								img(src="img/study-bg.jpg")
-					.study__item
+					.col.study__item
 						.study__wrap
 							.study__content.icon-bulb
 								h5.h5.text-uppercase aCCUMULATE CREATIVE IDEAS
@@ -423,10 +426,14 @@ body
 							input(placeholder="Email" type="email")
 							input(placeholder="Subject" type="text")
 							textarea(placeholder="Message")
-							a.text-uppercase.btn(href="#") Send message
-
-
-
+							button.text-uppercase.btn Send message
+		section.trial-test.text-center
+			.container
+				h3.h3 Let's Get Started Now. 
+					span.font-weight-bold It's FREE!
+				p 30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.
+				a.btn.text-uppercase(href="#") start free trial
+		include ../modules/footer
 
 
 
