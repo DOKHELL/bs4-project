@@ -26,14 +26,33 @@ function initHolderBg() {
 	});
 };
 
-function sliderServices() {
-	$('.services__items').slick({
-		arrows: false,
-		dots: true,
-		vertical: true,
-		verticalSwiping: true,
-	});
-};
+if( window.innerWidth >= 767){
+	function sliderServices() {
+		$('.services__items').slick({
+			arrows: false,
+			dots: true,
+			vertical: true,
+			verticalSwiping: true,
+		});
+	};
+} else {
+	function sliderServices() {
+		$('.services__items').slick({
+			arrows: false,
+			dots: true,
+			vertical: false,
+			verticalSwiping: false,
+		});
+	};
+} 
+// function sliderServices() {
+// 	$('.services__items').slick({
+// 		arrows: false,
+// 		dots: true,
+// 		vertical: true,
+// 		verticalSwiping: true,
+// 	});
+// };
 
 function initHolderBg2() {
 	"use strict";

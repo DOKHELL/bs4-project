@@ -9,85 +9,85 @@
   .mix {
     padding: 0;
     position: relative;
-    &:hover{
-        .mix-label{
-            opacity: 1;
-            visibility: visible;
-        }
+    &:hover {
+      .mix-label {
+        opacity: 1;
+        visibility: visible;
+      }
     }
-        a{
-            z-index: 10;
-            &:hover{
-                &:after{
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-            &:after{
-                content: "";
-                position: absolute;
-                background-color: rgba($hover-color,.8);
-                width: 100%;
-                height: 100%;
-                top: 0;
-                z-index: 1;
-                left: 0;
-                right: 0;
-                visibility: hidden;
-                opacity: 0;
-                @include transition(visibility opacity);
-            }
+    a {
+      z-index: 10;
+      &:hover {
+        &:after {
+          visibility: visible;
+          opacity: 1;
         }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: rgba($hover-color, 0.8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(visibility opacity);
+      }
+    }
   }
 }
-.mix-label{
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    bottom: 45px;
-    z-index: 2;
-    font-size: 24px;
-    pointer-events: none;
-    left: 45px;
-    color: $white;
-    @include transition(opacity visibility);
-    .h4{
-        font-family: $source;
-        letter-spacing: 1.2px;
-        padding-top: 25px;
-        margin-bottom: 13px;
-        position: relative;
-        &:before{
-            content: "";
-            position: absolute;
-            width: 45px;
-            height: 4px;
-            background-color: $white;
-            top: 0;
-        }
+.mix-label {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 45px;
+  z-index: 2;
+  font-size: 24px;
+  pointer-events: none;
+  left: 45px;
+  color: $white;
+  @include transition(opacity visibility);
+  .h4 {
+    font-family: $source;
+    letter-spacing: 1.2px;
+    padding-top: 25px;
+    margin-bottom: 13px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 4px;
+      background-color: $white;
+      top: 0;
     }
-    .mix-skill{
-        display: inline-block;
-        font-size: 14px;
-        letter-spacing: 0.7px;
-    }
+  }
+  .mix-skill {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
 }
 .mix-button {
   margin-bottom: 40px;
+  .mixitup-control-active{
+	  color: $orange;
+	  &:after{
+		  color: $grey-text;
+	  }
+  }
   button {
     background-color: transparent;
     color: $grey-text;
     margin: 0 10px;
     border: none;
     position: relative;
-    &:focus {
-      color: $orange;
-      &:after {
-        color: $grey-text;
-      }
-    }
     &:last-child {
-      &:after { 
+      &:after {
         content: "";
       }
     }

@@ -7,7 +7,7 @@ $hover-color: #e74c3c;
 $bg-colorimg: rgba(0, 0, 0, 0.678);
 $choco-color: #cbc6c0;
 $grey-bord: #e5e5e5;
-$grey-text: #999999;
+$grey-text: #999;
 $grey-text2: #6a6a6a;
 $orange: #e74c3c;
 $dark: #202020;
@@ -30,7 +30,7 @@ $tiny: 420px;
 
 .separator {
   position: relative;
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 200px;

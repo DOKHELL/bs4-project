@@ -1,22 +1,23 @@
 .blog {
   padding: 100px 0 0;
   background-color: $white-color;
-  .row{
-	  margin: 0;
+  .row {
+    margin: 0;
   }
   .col-6 {
     display: flex;
     padding: 0;
-    &:nth-child(3n),&:nth-of-type(4n){
+    &:nth-child(3n),
+    &:nth-of-type(4n) {
       .blog__img {
         order: 2;
       }
       .blog__content {
         &:before {
           left: auto;
-		  right: -30px;
-		  border-left: 90px solid $orange;
-		  border-right:0;
+          right: -30px;
+          border-left: 90px solid $orange;
+          border-right: 0;
         }
       }
     }

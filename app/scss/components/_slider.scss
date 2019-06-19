@@ -1,28 +1,27 @@
 .slider {
   position: relative;
 }
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   outline: none;
   border: none;
 }
 .slider__item {
   position: relative;
-  height: 1000px;
   padding: 0;
-    &:after {
-      content: "";
-      position: absolute;
-      background-image: url('../img/bg-fon.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50%;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: 1;
-      left: 0;
-      right: 0;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
 }
 .slider__item-img {
   position: relative;
@@ -46,9 +45,9 @@
   .h1 {
     margin-bottom: 75px;
   }
-  .separator{
-    &:after{
-    background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
+  .separator {
+    &:after {
+      background: linear-gradient(to right, $white 41%, transparent 0, transparent 58%, $white 41%);
     }
   }
   p {
@@ -82,15 +81,16 @@
   transform: translateY(-50%);
   border-radius: 50%;
   padding: 0;
-  &:hover{
-    &:after{
+  &:hover {
+    &:after {
       color: $orange;
       background-color: $white;
     }
   }
 }
-.slick-next,.slick-prev{
-  &:after{
+.slick-next,
+.slick-prev {
+  &:after {
     position: absolute;
     content: "\e902";
     line-height: 45px;
@@ -99,7 +99,7 @@
     left: 0;
     border: none;
     border-radius: 50%;
-    @include transition(color background-color)
+    @include transition(color background-color);
   }
 }
 .slick-prev {
@@ -107,7 +107,7 @@
 }
 .slick-next {
   right: 50px;
-  &:after{
-    transform: rotate(180deg)
+  &:after {
+    transform: rotate(180deg);
   }
 }

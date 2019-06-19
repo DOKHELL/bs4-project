@@ -1,20 +1,20 @@
-.trial-test{
-	background-image: url("../img/trial-bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-	padding: 125px 0 140px;
-	position: relative;
-	z-index: 1;
-	@include bg-fon-image;
-	color: $white;
-	.h3{
-		font-size: 36px;
-		line-height: 30px;
-	}
-	p{
-		font-size: 18px;
-		color: $white;
-		margin-bottom: 60px;
-	}
+.trial-test {
+  background-image: url("../img/trial-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 125px 0 140px;
+  position: relative;
+  z-index: 1;
+  @include bg-fon-image;
+  color: $white;
+  .h3 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 60px;
+  }
 }

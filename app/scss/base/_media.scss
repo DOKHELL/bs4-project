@@ -1,2 +1,83 @@
-@media screen and (max-width: $default) {
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) {
+	.slick-btn{
+		display: none !important;
+	}
+	.slider__content{
+		top: 40%;
+	}
+	.services__info {
+		padding: 70px 0 70px 40px;
+	  }
+	  .services__content {
+		margin-bottom: 30px;
+	  }
+}
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (max-width: 767.98px) {
+	.services__inner {
+		padding-right: 110px;
+		.h2-line:before{
+			display: none;
+		}
+	}
+	h2.h2{
+		font-size: 26px;
+	}
+	.services .anchor {
+		right: -80px;
+	}
+	.services .slick-dots {
+		top: auto;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		li{
+			display: inline-block;
+		}
+		button{
+			width: 34px;
+			height: 5px;
+		}
+	}
+	.services .slick-dots .slick-active button{
+		width: 37px;
+		height: 7px;
+	}
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (max-width: 991.98px) {
+	h1.h1{
+		font-size: 50px;
+	}
+	.btn{
+	  font-size: 12px;
+  }
+  .slider__content{
+	  span{
+		  font-size: 16px;
+	  }
+  }
+  .slider__item.slider__item:after,.slider__item-img{
+	height: 850px !important;
+  }
+  .study__inner {
+	max-width: 80%;
+  }
+}
+
+// Большие девайсы (большие десктопы, >= 992px)
+@media (max-width: 1199.98px) {
+  .header {
+    .nav-item {
+      padding-left: 35px;
+    }
+  }
+  
+}
+
+// Большие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
 }
