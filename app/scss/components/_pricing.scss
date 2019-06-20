@@ -1,5 +1,14 @@
 .pricing {
   padding: 140px 0;
+  table{
+	  width: 100%;
+	  tr{
+		  display: block;
+	  }
+	  td{
+		  display: block;
+	  }
+  }
   span {
     outline: none;
   }
@@ -43,7 +52,8 @@
   padding: 120px 0 45px;
   background-color: $white-color;
   .btn {
-    background-color: $grey-text;
+	background-color: $grey-text;
+	display: inline-block;
   }
   span {
     display: block;
@@ -52,7 +62,7 @@
     padding: 0 20px;
     font-weight: 600;
     &:last-of-type {
-      margin-bottom: 40px;
+    //   margin-bottom: 40px;
     }
   }
 }

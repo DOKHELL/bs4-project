@@ -3,8 +3,8 @@ section.form-contact
 		.title__holder.text-center.separator
 			h2.h2.text-uppercase keep in touch
 			p Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
-		.row
-			.col-5
+		.row.justify-content-center
+			.col-xl-5.col-lg-5.col-md-12.mb-5
 				.contacts
 					dl
 						dt.text-uppercase Our Address
@@ -19,10 +19,14 @@ section.form-contact
 						dt.text-uppercase email us
 						dd
 							a(href="mailto:contactus@email.com") contactus@email.com
-			.col-7
+			.col-xl-7.col-lg-7.col-md-12
 				form.form
-					input(placeholder="Name" type="text")
-					input(placeholder="Email" type="email")
-					input(placeholder="Subject" type="text")
-					textarea(placeholder="Message")
+					.form-group
+						input(placeholder="Name" class="form-controls" type="text")
+					.form-group
+						input(placeholder="Email" class="form-controls" id="exampleInputEmail1" aria-describedby="emailHelp" type="email")
+					.form-group
+						input(placeholder="Subject" class="form-controls" type="text")
+					.form-group
+						textarea(placeholder="Message" class="form-controls" id="exampleFormControlTextarea1" rows="3")
 					button.text-uppercase.btn Send message

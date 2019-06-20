@@ -1,5 +1,17 @@
 .slider {
   position: relative;
+  &:after{
+	content: "";
+    position: absolute;
+    bottom: 0;
+    border: 90px solid transparent;
+    border-bottom: 0px solid green;
+	border-left: 100px solid green;
+	width: 50%;
+	}
+  &:before{
+
+  }
 }
 .slick-initialized .slick-slide {
   outline: none;

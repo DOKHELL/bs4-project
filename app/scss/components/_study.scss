@@ -7,7 +7,7 @@
     padding: 0;
     position: absolute;
     bottom: 10%;
-    left: 27%;
+    left: 304px;
     transform: translateY(-50%);
     li {
       display: inline-block;
@@ -49,6 +49,13 @@
   background-color: $white;
   padding: 250px 15px 115px;
   position: relative;
+  .btn{
+	  border: 3px solid $orange;
+	  &:hover{
+		border: 3px solid #E74B9A;
+		opacity: 1;
+	  }
+  }
   &:before {
     color: $white;
     font-size: 40px;

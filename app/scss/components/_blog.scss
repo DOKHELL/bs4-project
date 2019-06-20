@@ -4,9 +4,7 @@
   .row {
     margin: 0;
   }
-  .col-6 {
-    display: flex;
-    padding: 0;
+  .blog__item {
     &:nth-child(3n),
     &:nth-of-type(4n) {
       .blog__img {

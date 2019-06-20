@@ -131,6 +131,25 @@ $(function () {
 	});
   });
 
+  function initHolderBg5() {
+	"use strict";
+	$('.blog__item .blog__img').each(function () {
+		var imgHolder = $(this),
+			img = imgHolder.find('img'),
+			imgSrc = img.attr('src');
+		if (!!imgHolder.length && !!img.length && !!imgSrc) {
+			imgHolder.css({
+				backgroundImage: 'url(' + imgSrc + ')',
+				backgroundSize: 'cover',
+				backgroundPosition: '50% 50%',
+				zIndex: '1',
+				backgroundRepeat: 'no-repeat',
+				height: '100%'
+			});
+			img.remove();
+		}
+	});
+};
 //Runs
 $(document).ready(function () {
 	slider();
@@ -140,6 +159,7 @@ $(document).ready(function () {
 	initHolderBg3();
 	slider2();
 	initHolderBg4();
+	initHolderBg5();
 	matchheight();
 
 
