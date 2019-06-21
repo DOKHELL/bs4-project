@@ -1,7 +1,7 @@
 .statistic__wrap {
   .statistic__item {
     padding-top: 150px;
-    position: relative;
+	position: relative;
     &:after,
     &:before {
       position: absolute;
@@ -23,6 +23,9 @@
       top: 40px;
     }
   }
+}
+.statistic__item{
+	max-width: 250px;
 }
 .statistic__image {
   padding: 155px 0 130px;

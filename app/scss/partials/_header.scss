@@ -29,12 +29,9 @@
   .nav-item {
     padding-left: 57px;
   }
-  .navbar-toggler {
-    border-color: #343a89;
+  .navbar-toggler-icon{
+	  &:before{
+		  font-size: 35px;
+	  }
   }
 }
-
-// adaptive
-// .navbar-nav {
-// 	align-items: center;
-// }

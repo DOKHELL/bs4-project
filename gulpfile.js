@@ -44,6 +44,7 @@ gulp.task('scripts', function () {
 		"app/libs/slick/slick/slick.min.js",
 		"app/libs/mixitup/dist/mixitup.min.js",
 		"app/libs/jquery-match-height-master/dist/jquery.matchHeight-min.js",
+		"app/libs/bootstrap-4/js/bootstrap.min.js"
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js 

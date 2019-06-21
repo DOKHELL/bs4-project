@@ -2,16 +2,19 @@
   position: relative;
   &:after{
 	content: "";
-    position: absolute;
-    bottom: 0;
-    border: 90px solid transparent;
-    border-bottom: 0px solid green;
-	border-left: 100px solid green;
-	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 125px;
+	width: 100%;
+	background-image: url("../img/tg-fon.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 	}
-  &:before{
 
-  }
 }
 .slick-initialized .slick-slide {
   outline: none;
@@ -20,24 +23,10 @@
 .slider__item {
   position: relative;
   padding: 0;
-  &:after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/bg-fon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1;
-    left: 0;
-    right: 0;
-  }
+  @include bg-fon-image2;
 }
 .slider__item-img {
   position: relative;
-  z-index: 1;
   outline: none;
 }
 .slider__content {

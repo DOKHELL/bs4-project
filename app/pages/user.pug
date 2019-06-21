@@ -15,21 +15,36 @@ doctype html
 	<link rel="stylesheet" href="css/main.min.css">
 body
 	.container
-		ul.nav.text-uppercase.font-weight-bold
-			li.nav-item
-				a.nav-link(href="#") Home
-			li.nav-item
-				a.nav-link(href="#") about us
-			li.nav-item
-				a.nav-link(href="#") portfolio
-			li.nav-item
-				a.nav-link(href="#") pricing
-			li.nav-item
-				a.nav-link(href="#") team
-			li.nav-item
-				a.nav-link(href="#") blog
-			li.nav-item
-				a.nav-link(href="#") contact
+		header.header
+			nav.navbar.navbar-expand-lg.bg-dark.fixed-top
+				.container
+					a.navbar-brand(href="#")
+						img(src="img/logo.png")
+					button.navbar-toggler(type="button" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation")
+						span.navbar-toggler-icon.icon-bars
+					.collapse.navbar-collapse#navbarNav
+						ul.navbar-nav.ml-auto.justify-content-around.text-uppercase.text-center
+							li.nav-item
+								a.nav-link(href="#") Home
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#about-anchor") about us
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#portfolio-anchor") portfolio
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#pricing-anchor") pricing
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#team-anchor") team
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#blog-anchor") blog
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link(href="#contact-anchor") contact
+									span.sr-only (current)
 		section.slider
 			.slider__items
 				.slider__item
@@ -71,60 +86,10 @@ body
 				.services__item
 					.services__inner.text-right
 						.services__info
-							h2.h2.text-uppercase.h2-line our services
 							.services__content
 								a.anchor.icon-camera.rounded-circle(href="#")
 								h5.h5.text-uppercase Web design
 								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
-				.services__item
-					.services__inner.text-right
-						.services__info
-							h2.h2.text-uppercase.h2-line our services
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
-				.services__item
-					.services__inner.text-right
-						.services__info
-							h2.h2.text-uppercase.h2-line our services
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-							.services__content
-								a.anchor.icon-camera.rounded-circle(href="#")
-								h5.h5.text-uppercase Web design
-								p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-					.services__image
-						.services__image-inner
-							img(src="img/services-img.jpg")
 		section.works
 			.mix-list
 				.mix.print.video
@@ -133,27 +98,27 @@ body
 						span.mix-skill art/t-shirt
 					a(href="#")
 						img(src="img/miximg-1.jpg")
-		.services__item
-			.services__inner.text-right
-				.services__info
-					.services__content
-						a.anchor.icon-camera.rounded-circle(href="#")
-						h5.h5.text-uppercase Web design
-						p.pl-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
-		.row
-			a.col-4(href="#")
-				.pricing__class.text-center
-					h5.h5.text-uppercase starter
-					.anchor.rounded-circle(href="#")
-						.pricing__price
-							span.price__number.font-weight-bold $19
-							span.price__text per month
-				.pricing__info
-					span Competition Analysis Methods
-					span All Ranked URLs
-					span International Support System
-					span Social Media Tracking
-					.btn Choose plan
+		section.pricing.text-center#pricing-anchor
+			.container
+				.row.justify-content-center
+					a.col-xl-4.col-lg-6.col-md-8.pb-4.pricing__items(href="#")
+						table
+							tr.pricing__class.text-center
+								td.h5.text-uppercase starter
+								td.anchor.rounded-circle(href="#")
+									.pricing__price
+										span.price__number.font-weight-bold $19
+										span.price__text per month
+							tr.pricing__info
+								td
+									span Competition Analysis Methods
+								td
+									span All Ranked URLs
+								td
+									span International Support System
+								td
+									span Social Media Tracking
+								td.btn Choose plan
 
 
 

@@ -2,7 +2,7 @@
   background-image: url("../img/team-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top left;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   color: $white;
@@ -48,7 +48,7 @@
   }
   &:nth-of-type(5) {
     left: 79%;
-    bottom: 122px;
+    bottom: 127px;
   }
   &:hover {
     .team__image {

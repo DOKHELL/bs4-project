@@ -8,8 +8,8 @@
     font-weight: normal;
     font-style: normal;
   }
- 
-[class^="icon-"], [class*=" icon-"] {
+
+  [class^="icon-"], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
 	speak: none;
@@ -48,6 +48,9 @@
   .icon-like:before {
 	content: "\e906";
   }
+  .icon-arrow-up-thick:before {
+	content: "\e90e";
+  }
   .icon-heart-outline:before {
 	content: "\e907";
   }
@@ -77,5 +80,14 @@
   }
   .icon-facebook-f:before {
 	content: "\f09a";
+  }
+  .icon-bars:before {
+	content: "\f0c9";
+  }
+  .icon-navicon:before {
+	content: "\f0c9";
+  }
+  .icon-reorder:before {
+	content: "\f0c9";
   }
   

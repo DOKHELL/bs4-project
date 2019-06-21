@@ -49,12 +49,13 @@
   background-color: $white;
   padding: 250px 15px 115px;
   position: relative;
-  .btn{
-	  border: 3px solid $orange;
-	  &:hover{
-		border: 3px solid #E74B9A;
-		opacity: 1;
-	  }
+  .btn {
+    border: 3px solid $orange;
+    margin-bottom: 60px;
+    &:hover {
+      border: 3px solid #e74b9a;
+      opacity: 1;
+    }
   }
   &:before {
     color: $white;
@@ -88,4 +89,5 @@
   max-width: 50%;
   height: 700px;
   z-index: -1;
+  //   margin: auto;
 }

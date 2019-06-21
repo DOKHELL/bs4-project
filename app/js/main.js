@@ -26,7 +26,7 @@ function initHolderBg() {
 	});
 };
 
-if( window.innerWidth >= 767){
+if (window.innerWidth >= 767) {
 	function sliderServices() {
 		$('.services__items').slick({
 			arrows: false,
@@ -44,15 +44,7 @@ if( window.innerWidth >= 767){
 			verticalSwiping: false,
 		});
 	};
-} 
-// function sliderServices() {
-// 	$('.services__items').slick({
-// 		arrows: false,
-// 		dots: true,
-// 		vertical: true,
-// 		verticalSwiping: true,
-// 	});
-// };
+}
 
 function initHolderBg2() {
 	"use strict";
@@ -123,15 +115,20 @@ function initHolderBg4() {
 
 function matchheight() {
 	$(".matchheight1").matchHeight();
-}
-$(function () {
-	$('.navbar-toggler').on('click', function () {
-	  $('.navbar-collapse').slideToggle().toggleClass('show');
-	  
-	});
-  });
+};
 
-  function initHolderBg5() {
+function matchheight2() {
+	$(".matchheight2").matchHeight();
+};
+
+function menuBurg() {
+	$('.navbar-toggler').on('click', function () {
+		$('.navbar-collapse').slideToggle().toggleClass('show');
+
+	});
+};
+
+function initHolderBg5() {
 	"use strict";
 	$('.blog__item .blog__img').each(function () {
 		var imgHolder = $(this),
@@ -150,6 +147,30 @@ $(function () {
 		}
 	});
 };
+
+function anchorTop() {
+	$('body').append('<a href="#" id="go-top" title="Вверх"></a>');
+};
+
+function anchorTops() {
+	$.fn.scrollToTop = function () {
+		$(this).hide().removeAttr("href");
+		if ($(window).scrollTop() >= "450") $(this).fadeIn("slow")
+		var scrollDiv = $(this);
+		$(window).scroll(function () {
+			if ($(window).scrollTop() <= "450") $(scrollDiv).fadeOut("slow")
+			else $(scrollDiv).fadeIn("slow")
+		});
+		$(this).click(function () {
+			$("html, body").animate({ scrollTop: 0 }, "slow")
+		})
+	}
+};
+
+function anchorTopsup() {
+	$("#go-top").scrollToTop();
+};
+
 //Runs
 $(document).ready(function () {
 	slider();
@@ -161,8 +182,19 @@ $(document).ready(function () {
 	initHolderBg4();
 	initHolderBg5();
 	matchheight();
+	menuBurg();
+	anchorTop();
+	anchorTops();
+	anchorTopsup();
+	matchheight2();
 
-
+	var $page = $('html, body');
+	$('a[href*="#"]').click(function () {
+		$page.animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 1000);
+		return false;
+	});
 
 	var mixer = mixitup('.mix-list');
 });

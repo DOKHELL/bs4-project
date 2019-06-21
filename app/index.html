@@ -8,8 +8,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>bs4</title>
 <link href="favicon.ico" rel="shortcut icon">
-<link rel="stelesheet" href="libs/bootstrap-4/css/bootstrap-reboot.min.css">
-<link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.min.css">
 <body>
@@ -17,16 +15,16 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg bg-dark fixed-top">
         <div class="container"><a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-          <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon-star"></span></button>
+          <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon-bars"></span></button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto justify-content-around text-uppercase">
+            <ul class="navbar-nav ml-auto justify-content-around text-uppercase text-center">
               <li class="nav-item"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">about us<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">portfolio<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">pricing<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">team<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">blog<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">contact<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#about-anchor">about us<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio-anchor">portfolio<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing-anchor">pricing<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#team-anchor">team<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#blog-anchor">blog<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact-anchor">contact<span class="sr-only">(current)</span></a></li>
             </ul>
           </div>
         </div>
@@ -36,7 +34,7 @@
       <div class="container-fluid">
         <div class="row slider__items">
           <div class="col col-lg col-md col-sm slider__item">
-            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__item-img"><img src="img/space-wallpapers-1920x1080-00012.jpg"></div>
             <div class="slider__content"><span>Our Clients Are Our First Priority</span>
               <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -44,7 +42,7 @@
             </div>
           </div>
           <div class="col col-lg col-md col-sm slider__item">
-            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__item-img"><img src="img/wallpapers-nature-1.jpg"></div>
             <div class="slider__content"><span>Our Clients Are Our First Priority</span>
               <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -52,19 +50,19 @@
             </div>
           </div>
           <div class="col col-lg col-md col-sm slider__item">
-            <div class="slider__item-img"><img src="img/slider-bg.png"></div>
+            <div class="slider__item-img"><img src="img/fantasy-wallpapers-1920x1080-00025.jpg"></div>
             <div class="slider__content"><span>Our Clients Are Our First Priority</span>
               <h1 class="h1 font-weight-bold separator">WELCOME TO BINO</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div class="slider__button"><a class="btn mb-3" href="#">GET STARTED NOW</a><a class="btn mb-3" href="#">LEARN MORE</a></div>
             </div>
           </div>
-        </div><a class="anchor icon-anchor rounded-circle" href="#"></a>
+        </div><a class="anchor icon-anchor rounded-circle" id="about-link" href="#about-anchor"></a>
       </div>
     </section>
-    <section class="about border-bottom">
+    <section class="about border-bottom" id="about-anchor">
       <div class="container">
-        <div class="row mx-auto text-center flex-wrap justify-content-md-between justify-content-sm-between justify-content-center"><a class="col-12 col-lg-3 col-md-6 col-sm-6 text-decoration-none about__item text-reset" href="#">
+        <div class="row mx-auto text-center flex-wrap justify-content-center"><a class="col-12 col-lg-3 col-md-6 col-sm-6 text-decoration-none about__item text-reset" href="#">
             <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
             <p class="font-weight-light">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p></a><a class="col-12 col-lg-3 col-md-6 col-sm-6 text-decoration-none about__item text-reset" href="#">
             <h3 class="matchheight1 h3 text-uppercase">Sleek design</h3>
@@ -152,7 +150,7 @@
         </div>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="portfolio-anchor">
       <div class="container-fluid">
         <div class="title__holder separator">
           <h2 class="h2 text-uppercase">recent works</h2>
@@ -261,13 +259,13 @@
         </div>
       </div>
     </section>
-    <section class="pricing text-center">
+    <section class="pricing text-center" id="pricing-anchor">
       <div class="container">
         <div class="title__holder separator">
           <h2 class="h2 text-uppercase">our pricing</h2>
           <p>A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</p>
         </div>
-        <div class="row justify-content-center"><a class="col-xl-4 col-lg-6 col-md-8 pb-4" href="#">
+        <div class="row justify-content-center"><a class="col-xl-4 col-lg-6 col-md-8 pb-4 pricing__items" href="#">
             <table>
               <tr class="pricing__class text-center">
                 <td class="h5 text-uppercase">starter</td>
@@ -282,7 +280,7 @@
                 <td><span>Social Media Tracking</span></td>
                 <td class="btn">Choose plan</td>
               </tr>
-            </table></a><a class="col-xl-4 col-lg-6 col-md-8 pb-4" href="#">
+            </table></a><a class="col-xl-4 col-lg-6 col-md-8 pb-4 pricing__items" href="#">
             <table>
               <tr class="pricing__class text-center">
                 <td class="h5 text-uppercase">starter</td>
@@ -297,7 +295,7 @@
                 <td><span>Social Media Tracking</span></td>
                 <td class="btn">Choose plan</td>
               </tr>
-            </table></a><a class="col-xl-4 col-lg-6 col-md-8 pb-4" href="#">
+            </table></a><a class="col-xl-4 col-lg-6 col-md-8 pb-4 pricing__items" href="#">
             <table>
               <tr class="pricing__class text-center">
                 <td class="h5 text-uppercase">starter</td>
@@ -313,6 +311,41 @@
                 <td class="btn">Choose plan</td>
               </tr>
             </table></a></div>
+      </div>
+    </section>
+    <section class="team text-center" id="team-anchor">
+      <div class="team__graf">
+        <div class="team__graf-img"><img src="img/team-graf.png"></div>
+        <div class="team__persons"><a class="team-person" href="#">
+            <div class="team__image"><img src="img/team-1.png"></div>
+            <div class="team__info text-center">
+              <h5 class="h5">Kazi Erfan</h5>
+              <p>Ul/UX Design</p>
+            </div></a><a class="team-person" href="#">
+            <div class="team__image"><img src="img/team-1.png"></div>
+            <div class="team__info text-center">
+              <h5 class="h5">Kazi Erfan</h5>
+              <p>Ul/UX Design</p>
+            </div></a><a class="team-person" href="#">
+            <div class="team__image"><img src="img/team-1.png"></div>
+            <div class="team__info text-center">
+              <h5 class="h5">Kazi Erfan</h5>
+              <p>Ul/UX Design</p>
+            </div></a><a class="team-person" href="#">
+            <div class="team__image"><img src="img/team-1.png"></div>
+            <div class="team__info text-center">
+              <h5 class="h5">Kazi Erfan</h5>
+              <p>Ul/UX Design</p>
+            </div></a><a class="team-person" href="#">
+            <div class="team__image"><img src="img/team-1.png"></div>
+            <div class="team__info text-center">
+              <h5 class="h5">Kazi Erfan</h5>
+              <p>Ul/UX Design</p>
+            </div></a></div>
+      </div>
+      <div class="title__holder separator">
+        <h2 class="text-uppercase font-weight-bold">our team</h2>
+        <p>Meet the craziest team. Share your thoughts with them.</p>
       </div>
     </section>
     <section class="integration text-center">
@@ -335,7 +368,7 @@
             <div class="integration__wrap icon-follow-me-on-soundcloud"></div></a></div>
       </div>
     </section>
-    <section class="blog text-center">
+    <section class="blog text-center" id="blog-anchor">
       <div class="title__holder separator">
         <h2 class="h2 text-uppercase">our blog</h2>
         <p>Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</p>
@@ -371,7 +404,7 @@
         </div>
       </div>
     </section>
-    <section class="form-contact">
+    <section class="form-contact" id="contact-anchor">
       <div class="container">
         <div class="title__holder text-center separator">
           <h2 class="h2 text-uppercase">keep in touch</h2>
@@ -379,7 +412,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-xl-5 col-lg-5 col-md-12 mb-5">
-            <div class="contacts">
+            <div class="contacts matchheight2">
               <dl>
                 <dt class="text-uppercase">Our Address</dt>
                 <dd>
@@ -397,7 +430,7 @@
             </div>
           </div>
           <div class="col-xl-7 col-lg-7 col-md-12">
-            <form class="form">
+            <form class="form matchheight2">
               <div class="form-group">
                 <input class="form-controls" placeholder="Name" type="text">
               </div>
@@ -439,7 +472,6 @@
     </footer>
   </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
-<script src="libs/bootstrap-4/js/bootstrap.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 </body>
