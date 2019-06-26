@@ -115,5 +115,5 @@ gulp.task('watch', function () {
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch', 'css-min','pug','scripts'));
+gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch','pug','scripts'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'scss', 'scripts', "img"));

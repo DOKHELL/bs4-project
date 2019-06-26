@@ -1,4 +1,9 @@
 .header {
+  .navbar {
+	&-brand{
+		padding: 0;
+	}
+  }
   .nav-link {
     color: $white-color;
     font-size: 14px;
@@ -29,9 +34,9 @@
   .nav-item {
     padding-left: 57px;
   }
-  .navbar-toggler-icon{
-	  &:before{
-		  font-size: 35px;
-	  }
+  .navbar-toggler-icon {
+    &:before {
+      font-size: 35px;
+    }
   }
 }

@@ -72,6 +72,12 @@
   .services .anchor {
     right: -80px;
   }
+  .services__content{
+	  right: 0;
+  }
+  .services__item .jumbotron{
+	  padding-right: 0;
+  }
   .services .slick-dots {
     top: auto;
     bottom: 0;
@@ -93,42 +99,42 @@
     left: 240px;
   }
   .team {
-	display: flex;
-	flex-direction: column;
-	.team__graf-img {
-	  img {
-		display: none;
-	  }
-	}
-	.title__holder{
-		margin-bottom: 100px;
-	}
+    display: flex;
+    flex-direction: column;
+    .team__graf-img {
+      img {
+        display: none;
+      }
+    }
+    .title__holder {
+      margin-bottom: 100px;
+    }
   }
-  .team__persons{
-	flex-wrap: wrap;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	order: 2;
+  .team__persons {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    order: 2;
   }
   .team-person {
-	position: initial;
-	padding: 0 15px;
-	&:hover {
-	  .team__image {
-		width: 50px;
-	  }
-	  }
-	}
+    position: initial;
+    padding: 0 15px;
+    &:hover {
+      .team__image {
+        width: 50px;
+      }
+    }
+  }
   .team__info {
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
   }
   .team__image {
-	margin: 0 auto 25px;
-	&:after {
-	  display: none;
-	}
+    margin: 0 auto 25px;
+    &:after {
+      display: none;
+    }
   }
 }
 // Средние девайсы («таблетки», >= 768px)
@@ -192,7 +198,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.study__item{
-		justify-content: center;
-	}
+  .study__item {
+    justify-content: center;
   }
+}

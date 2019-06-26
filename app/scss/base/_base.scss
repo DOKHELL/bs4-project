@@ -10,6 +10,9 @@ p {
   font-family: $source;
   line-height: 24px;
   color: $grey-text;
+  &:last-child{
+	  margin-bottom: 0;
+  }
 }
 h2.h2 {
   font-family: $source;
@@ -34,8 +37,9 @@ img {
 .title__holder {
   margin-bottom: 90px;
   p {
-    max-width: 650px;
-    margin: auto;
+	&:last-child{
+		margin-bottom: 0;
+	}
   }
 }
 button {
@@ -54,10 +58,10 @@ button {
   right: 0;
   margin: auto;
   bottom: -35px;
-  box-shadow: 0px 0px 2px 5px rgba(244, 245, 249, 0.6);
+  box-shadow: 0 0 2px 5px $shadows;
   @include transition(background-color box-shadow);
   &:hover {
-    box-shadow: 0px 0px 6px 5px rgba(244, 245, 249, 0.6);
+    box-shadow: 0 0 6px 5px $shadows;
     background-color: $white;
   }
   &:before {
@@ -77,7 +81,7 @@ textarea {
   border-bottom: 1px solid $grey-bord;
   color: $grey-text;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   resize: none;
   padding: 15px 10px;
   width: 100%;
@@ -91,14 +95,14 @@ textarea {
   z-index: 30;
   bottom: 2%; 
   right: 1%; 
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 50%;
-  display:none;
+  display: none;
   width: 55px;
   height: 55px;
   background: $orange;
   @include transition(opacity);
-  &:after{
+  &:after {
 	  content: "\e90e";
 	  font-family: $ico;
 	  font-size: 25px;
@@ -112,7 +116,7 @@ textarea {
  
 #go-top:hover {
   opacity: .9;
-  &:after{
+  &:after {
 	  color: $white;
   }
 }

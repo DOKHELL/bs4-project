@@ -1,4 +1,4 @@
-@mixin transition($properties: all, $duration: 0.5s, $method: ease-in-out, $delay: 0s) {
+@mixin transition($properties: all, $duration: .5s, $method: ease-in-out, $delay: 0s) {
   $value: ();
   @each $property in $properties {
     @if length($value) > 0 {

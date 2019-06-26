@@ -1,7 +1,6 @@
 .services {
-	position: relative;
+  position: relative;
   .anchor {
-    right: -115px;
     top: 50%;
     transform: translateY(-50%);
     margin: inherit;
@@ -40,7 +39,8 @@
   display: flex !important;
   padding: 0;
   .jumbotron {
-    padding: 0;
+	padding: 0;
+	padding-right: 115px;
     background-color: transparent;
   }
   .lead {
@@ -54,8 +54,8 @@
 }
 .services__info {
   padding: 140px 0 140px 40px;
-  a{
-	  display: block;
+  a {
+    display: block;
   }
 }
 .services__inner {
@@ -84,10 +84,12 @@
   width: 100%;
 }
 .services__content {
-  max-width: 570px;
+  max-width: 575px;
   margin-left: auto;
   margin-bottom: 60px;
+  padding-right: 115px;
   position: relative;
+  right: -115px;
   &:last-child {
     margin-bottom: 0;
   }

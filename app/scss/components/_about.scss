@@ -7,7 +7,13 @@
 .about__item {
   padding-top: 100px;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
   color: $grey-text;
+  max-width: 245px;
   &:hover {
     .h3 {
       color: $orange;
@@ -21,7 +27,7 @@
     }
   }
   p {
-    font-family: $source;
+	font-family: $source;
   }
   .h3 {
     font-size: 18px;

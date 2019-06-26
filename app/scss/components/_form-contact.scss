@@ -30,7 +30,7 @@
   dd a {
     @include transition(opacity);
     &:hover {
-      opacity: 0.7;
+      opacity: .7;
     }
   }
 }
