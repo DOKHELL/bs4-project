@@ -1,8 +1,14 @@
 .history {
-  padding: 130px 0 145px;
+  padding: 146px 0 90px;
   .btn {
-    margin: 0 15px;
+    // margin: 0 15px;
     padding: 15px 45px;
     color: $white;
+  }
+  p{
+	  line-height: 28px;
+  }
+  &-image{
+	  max-width: 510px;
   }
 }

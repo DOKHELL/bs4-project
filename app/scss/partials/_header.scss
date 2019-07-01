@@ -1,5 +1,7 @@
 .header {
   .navbar {
+	  padding-right: 0;
+	  padding-left: 0;
 	&-brand{
 		padding: 0;
 	}
@@ -36,7 +38,8 @@
   }
   .navbar-toggler-icon {
     &:before {
-      font-size: 35px;
+	  font-size: 35px;
+	  color: $white;
     }
   }
 }

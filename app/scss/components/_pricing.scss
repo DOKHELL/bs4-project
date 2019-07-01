@@ -1,11 +1,8 @@
 .pricing {
-  padding: 140px 0;
+  padding: 156px 0 116px;
   table {
     width: 100%;
-    tr {
-      display: block;
-    }
-    td {
+    tr,td,thead {
       display: block;
     }
   }
@@ -14,7 +11,7 @@
   }
   .pricing__items {
     &:hover {
-      .pricing__class {
+      thead {
         background-color: $orange;
       }
       .pricing__info {
@@ -24,12 +21,12 @@
         }
       }
       .anchor {
-        box-shadow: 0 0 6px 11px rgba(244, 245, 249, .6);
+        box-shadow: 0 0 6px 11px rgba(244, 245, 249, 0.6);
       }
     }
   }
 }
-.pricing__class {
+thead {
   padding: 45px 0 127px;
   background-color: $grey-text;
   color: $white;
@@ -49,18 +46,22 @@
   }
 }
 .pricing__info {
-  padding: 120px 0 45px;
+  padding: 120px 0 31px;
   background-color: $white-color;
-  .btn {
+  a.btn {
     background-color: $grey-text;
-    display: inline-block;
+	display: inline-block;
+	padding: 12px 24px;
+	margin-top: 30px;
   }
-  span {
+  td {
+	padding: 0 20px;
+	font-size: 14px;
+	margin-bottom: 18px;
+  }
+  strong {
     display: block;
-    margin-bottom: 20px;
     color: $grey-text;
-    padding: 0 20px;
-    font-weight: 600;
   }
 }
 .pricing__price {
@@ -70,7 +71,7 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  span {
+  strong,span {
     display: block;
     color: $grey-text;
     font-family: $source;

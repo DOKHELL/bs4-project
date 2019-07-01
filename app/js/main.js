@@ -141,7 +141,7 @@ function initHolderBg5() {
 				backgroundPosition: '50% 50%',
 				zIndex: '1',
 				backgroundRepeat: 'no-repeat',
-				height: '100%'
+				height: '485px'
 			});
 			img.remove();
 		}

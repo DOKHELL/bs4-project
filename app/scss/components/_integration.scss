@@ -2,6 +2,13 @@
   padding: 140px 0 120px;
   background-color: $white-color;
   border-bottom: 1px solid $grey-bord;
+  h2.h2{letter-spacing: 0;}
+  .title__holder{
+	p{
+		font-family: $open;
+		line-height: 21px;
+	}
+  }
   .integration__wrap {
     background-color: $white;
     height: 100px;

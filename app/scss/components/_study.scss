@@ -1,6 +1,6 @@
 .study {
   background-color: $white-color;
-  padding: 145px 0;
+  padding: 151px 0 173px;
   .slick-dots {
     font-size: 0;
     text-decoration: none;
@@ -43,16 +43,19 @@
   width: 100%;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 54%;
   transform: translateY(-50%);
 }
 .study__content {
   background-color: $white;
-  padding: 250px 15px 115px;
+  padding: 260px 60px 115px;
   position: relative;
   .btn {
     border: 3px solid $orange;
-    margin-bottom: 60px;
+	margin-bottom: 60px;
+	font-weight: 800;
+	padding: 10px 34px;
+	font-size: 12px;
     &:hover {
       border: 3px solid #e74b9a;
       opacity: 1;
@@ -71,8 +74,8 @@
     @extend.about__item:after;
     transform: rotate(45deg);
     top: 15%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: $orange;
   }
   .h5 {
@@ -82,8 +85,7 @@
     font-size: 18px;
   }
   p {
-    max-width: 550px;
-    margin: 0 auto 45px;
+    margin-bottom: 45px;
   }
 }
 .study__inner {

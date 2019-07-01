@@ -1,23 +1,25 @@
 body {
   font-family: $open;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: $white;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+//   font: 600 16px/24px $source;
 }
 h1.h1 {
   font-size: 72px;
   letter-spacing: 7.2px;
 }
 p {
-  font-size: 14px;
-  font-family: $source;
-  line-height: 24px;
+  font: 400 14px/24px $source;
   color: $grey-text;
-  &:last-child{
-	  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 h2.h2 {
-  font-family: $source;
-  font-weight: 700;
-  font-size: 36px;
+  font: 700 36px/24px $source;
   letter-spacing: 3.6px;
   color: $grey-text2;
 }
@@ -35,11 +37,15 @@ img {
   width: 100%;
 }
 .title__holder {
-  margin-bottom: 90px;
+  margin-bottom: 65px;
+  padding-bottom: 29px;
+  h2{
+	  margin-bottom: 23px;
+  }
   p {
-	&:last-child{
-		margin-bottom: 0;
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 button {
@@ -47,6 +53,9 @@ button {
   &:focus {
     outline: none;
   }
+}
+address {
+  margin-bottom: 0;
 }
 .anchor {
   position: absolute;
@@ -80,8 +89,7 @@ textarea {
   border: none;
   border-bottom: 1px solid $grey-bord;
   color: $grey-text;
-  font-weight: 600;
-  font-size: 16px;
+  font: 600 16px/24px $source;
   resize: none;
   padding: 15px 10px;
   width: 100%;
@@ -93,8 +101,8 @@ textarea {
 #go-top {
   position: fixed;
   z-index: 30;
-  bottom: 2%; 
-  right: 1%; 
+  bottom: 6%;
+  right: 1%;
   cursor: pointer;
   border-radius: 50%;
   display: none;
@@ -103,20 +111,20 @@ textarea {
   background: $orange;
   @include transition(opacity);
   &:after {
-	  content: "\e90e";
-	  font-family: $ico;
-	  font-size: 25px;
-	  position: absolute;
-	  left: 50%;
-	  top: 50%;
-	  transform: translate(-50%,-50%);
-	  @include transition(color);
+    content: "\e90e";
+    font-family: $ico;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include transition(color);
   }
 }
- 
+
 #go-top:hover {
-  opacity: .9;
+  opacity: 0.9;
   &:after {
-	  color: $white;
+    color: $white;
   }
 }

@@ -1,6 +1,11 @@
 .blog {
   padding: 100px 0 0;
   background-color: $white-color;
+  .title__holder{
+	  h2{
+		  letter-spacing: 0;
+	  }
+  }
   .row {
     margin: 0;
   }
@@ -29,7 +34,7 @@
   z-index: 2;
   width: 50%;
   background-color: $orange;
-  padding: 45px 40px;
+  padding: 70px 50px;
   color: $white;
   position: relative;
   &:before {
@@ -46,22 +51,22 @@
     border-bottom: 90px solid transparent;
   }
   span {
-    letter-spacing: .7px;
+    letter-spacing: 1.7px;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     display: block;
   }
   .h4 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 1.2px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
     position: relative;
     &:after {
       content: "";
-      width: 45px;
-      height: 6px;
+      width: 43px;
+      height: 4px;
       background-color: $white;
       position: absolute;
       bottom: 0;
@@ -70,13 +75,15 @@
   }
   p {
     color: $white;
-    line-height: 30px;
-    margin-bottom: 25px;
+	line-height: 30px;
+	font-size: 16px;
+	font-family: $open;
+    margin-bottom: 40px;
   }
   a {
     font-style: italic;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: $white;
     @include transition(opacity);
     &:hover {

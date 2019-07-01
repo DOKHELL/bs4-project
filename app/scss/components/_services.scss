@@ -53,7 +53,7 @@
   width: 100%;
 }
 .services__info {
-  padding: 140px 0 140px 40px;
+  padding: 147px 0 173px 40px;
   a {
     display: block;
   }
@@ -62,8 +62,10 @@
   background-color: $dark;
   padding-right: 85px;
   .h2 {
-    color: $white;
-    margin-bottom: 60px;
+	color: $white;
+	max-width: 375px;
+    margin-left: auto;
+    margin-bottom: 67px;
   }
   .h5 {
     color: $orange;
@@ -86,7 +88,7 @@
 .services__content {
   max-width: 575px;
   margin-left: auto;
-  margin-bottom: 60px;
+  margin-bottom: 66px;
   padding-right: 115px;
   position: relative;
   right: -115px;

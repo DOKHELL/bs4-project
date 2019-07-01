@@ -1,5 +1,5 @@
 .about {
-  padding: 95px 0 110px;
+  padding: 130px 0 90px;
   .border-bottom {
     border-color: $grey-text2;
   }
@@ -14,6 +14,9 @@
   margin-bottom: 20px;
   color: $grey-text;
   max-width: 245px;
+  &:before {
+    color: $orange;
+  }
   &:hover {
     .h3 {
       color: $orange;
@@ -23,11 +26,13 @@
       color: $orange;
     }
     &:after {
+      border-color: $orange;
       transform: rotate(45deg);
     }
   }
   p {
 	font-family: $source;
+	line-height: 21px;
   }
   .h3 {
     font-size: 18px;
@@ -36,7 +41,7 @@
     color: $grey-text2;
     @include transition(color);
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     &:after {
       content: "";
       width: 40px;
@@ -69,6 +74,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    @include transition(transform color);
+    @include transition(transform color border-color);
   }
 }

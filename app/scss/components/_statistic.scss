@@ -1,7 +1,24 @@
 .statistic__wrap {
+  strong,
+  span {
+    display: block;
+    color: $white-color;
+    font-family: $source;
+    line-height: 30px;
+  }
+  strong {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  span {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+
   .statistic__item {
     padding-top: 150px;
-	position: relative;
+    position: relative;
     &:after,
     &:before {
       position: absolute;
@@ -25,26 +42,10 @@
   }
 }
 .statistic__item {
-	max-width: 250px;
+  max-width: 250px;
 }
 .statistic__image {
-  padding: 155px 0 130px;
+  padding: 155px 0 114px;
   position: relative;
   @include bg-fon-image;
-}
-.statistic__number,
-.statistic__text {
-  display: block;
-  color: $white-color;
-  font-family: $source;
-  line-height: 30px;
-}
-.statistic__number {
-  font-size: 30px;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
-}
-.statistic__text {
-  font-size: 18px;
-  letter-spacing: .9px;
 }

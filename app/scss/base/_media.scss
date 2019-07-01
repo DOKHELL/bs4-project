@@ -6,6 +6,9 @@
   .slider__content {
     top: 53%;
   }
+  .study__content{
+	padding: 250px 15px 115px;
+  }
   .services__info {
     padding: 70px 0 70px 40px;
   }
@@ -44,6 +47,10 @@
       }
     }
   }
+  .header .navbar{
+	  padding-left: 15px;
+	  padding-right: 15px;
+  }
   .contacts {
     padding: 90px 25px;
     dt {
@@ -60,6 +67,19 @@
 
 // Малые девайсы («ландшафтные», >= 575px)
 @media (max-width: 767.98px) {
+	.about,.history,.study,.statistic__image,.pricing,.trial-test,.form-contact,.integration{
+		padding: 95px 0 30px;
+	}
+	.title__holder{
+		margin-bottom: 40px;
+	}
+	.footer ul{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.works,.team,.blog{
+		padding: 60px 0 0;
+	}
   .services__inner {
     padding-right: 110px;
     .h2-line:before {
@@ -115,11 +135,13 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    order: 2;
+	order: 2;
+	padding-bottom: 60px;
   }
   .team-person {
     position: initial;
-    padding: 0 15px;
+	padding: 0 15px;
+	margin-bottom: 10px;
     &:hover {
       .team__image {
         width: 50px;

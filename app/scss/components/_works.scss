@@ -83,8 +83,11 @@
   button {
     background-color: transparent;
     color: $grey-text;
-    margin: 0 10px;
-    border: none;
+    margin: 0 19px;
+	border: none;
+	font-family: $open;
+	font-size: 14px;
+	font-weight: 500;
     position: relative;
     &:last-child {
       &:after {
@@ -94,7 +97,7 @@
     &:after {
       content: "/";
       position: absolute;
-      right: -15px;
+      right: -24px;
     }
   }
 }

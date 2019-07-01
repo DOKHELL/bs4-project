@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: top center;
   display: flex;
+  padding-top: 140px;
   flex-direction: column;
   color: $white;
   .team__graf {
@@ -17,8 +18,7 @@
     }
   }
   .title__holder {
-    margin-top: 140px;
-    margin-bottom: -50px;
+    margin-bottom: 0;
   }
   .separator {
     &:after {
@@ -32,23 +32,23 @@
 .team-person {
   position: absolute;
   left: 15%;
-  bottom: 35px;
+  bottom: 55px;
   z-index: 6;
   &:nth-of-type(2) {
     left: 30%;
-    bottom: 80px;
+    bottom: 100px;
   }
   &:nth-of-type(3) {
     left: 45%;
-    bottom: 90px;
+    bottom: 110px;
   }
   &:nth-of-type(4) {
     left: 65%;
-    bottom: 60px;
+    bottom: 80px;
   }
   &:nth-of-type(5) {
     left: 79%;
-    bottom: 127px;
+    bottom: 137px;
   }
   &:hover {
     .team__image {
