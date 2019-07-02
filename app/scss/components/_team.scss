@@ -18,7 +18,10 @@
     }
   }
   .title__holder {
-    margin-bottom: 0;
+	margin-bottom: 0;
+	h2.h2{
+		color: $white;
+	}
   }
   .separator {
     &:after {

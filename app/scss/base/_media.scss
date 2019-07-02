@@ -172,8 +172,8 @@
       font-size: 16px;
     }
   }
-  .slider__item.slider__item:after,
-  .slider__item-img {
+  .slider.slider__item.slider__item:after,
+  .slider .slider__item .slider__item-img.wrap_image{
     height: 850px !important;
   }
   .study__inner {

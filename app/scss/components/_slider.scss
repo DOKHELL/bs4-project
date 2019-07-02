@@ -1,5 +1,8 @@
 .slider {
   position: relative;
+  .slider__item-img.wrap_image{
+	height: 1000px!important;
+}
   &:after {
 	content: "";
 	position: absolute;
@@ -29,6 +32,7 @@
   position: relative;
   outline: none;
 }
+
 .slider__content {
   max-width: 800px;
   text-align: center;

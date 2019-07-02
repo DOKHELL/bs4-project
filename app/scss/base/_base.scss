@@ -111,12 +111,13 @@ textarea {
   background: $orange;
   @include transition(opacity);
   &:after {
-    content: "\e90e";
+    content: "\f106";
     font-family: $ico;
     font-size: 25px;
     position: absolute;
     left: 50%;
-    top: 50%;
+	top: 47%;
+	color: $white;
     transform: translate(-50%, -50%);
     @include transition(color);
   }
@@ -125,6 +126,6 @@ textarea {
 #go-top:hover {
   opacity: 0.9;
   &:after {
-    color: $white;
+    color: $black;
   }
 }
