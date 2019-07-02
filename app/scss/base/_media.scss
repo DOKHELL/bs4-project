@@ -1,13 +1,37 @@
 // Экстрамалые девайсы («портретные телефоны», < 576px)
 @media (max-width: 575.98px) {
+  .statistic__wrap .statistic__item{
+    padding-top: 125px;
+  }
+  .statistic__wrap strong{
+    font-size: 24px;
+  }
+  .form-contact .form {
+    padding: 50px 25px !important;
+}
+  .statistic__wrap span{
+    font-size: 14px;
+  }
+  .contacts {
+    padding: 50px 25px !important;
+}
+  .statistic__wrap span{
+    font-size: 14px;
+  }
+  .mix-button button{
+    margin: 0 6px;
+  }
+  .mix-button button:after{
+    right: -11px;
+  }
   .slick-btn {
     display: none !important;
   }
   .slider__content {
     top: 53%;
   }
-  .study__content{
-	padding: 250px 15px 115px;
+  .study__content {
+    padding: 250px 15px 115px;
   }
   .services__info {
     padding: 70px 0 70px 40px;
@@ -47,9 +71,9 @@
       }
     }
   }
-  .header .navbar{
-	  padding-left: 15px;
-	  padding-right: 15px;
+  .header .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .contacts {
     padding: 90px 25px;
@@ -67,19 +91,70 @@
 
 // Малые девайсы («ландшафтные», >= 575px)
 @media (max-width: 767.98px) {
-	.about,.history,.study,.statistic__image,.pricing,.trial-test,.form-contact,.integration{
-		padding: 95px 0 30px;
-	}
-	.title__holder{
-		margin-bottom: 40px;
-	}
-	.footer ul{
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	.works,.team,.blog{
-		padding: 60px 0 0;
-	}
+  .about,
+  .history,
+  .study,
+  .statistic__image,
+  .pricing,
+  .trial-test,
+  .form-contact,
+  .integration {
+    padding: 95px 0 30px;
+  }
+  .title__holder {
+    margin-bottom: 40px;
+  }
+  .team__info{
+    .h5{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  .trial-test {
+    .btn{
+      padding: 11px 34px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .h3 {
+      font-size: 25px;
+    }
+  }
+
+  .form-contact .form {
+    padding: 50px 95px;
+  }
+  .contacts {
+    padding: 50px 88px;
+    dt {
+      font-size: 20px;
+    }
+    dd,
+    dd a {
+      font-size: 14px;
+    }
+  }
+  .blog__content {
+    padding: 50px;
+    p {
+      font-size: 13px;
+    }
+    a{
+      font-size: 14px;
+    }
+  }
+  .footer ul {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .works,
+  .team,
+  .blog {
+    padding: 60px 0 0;
+  }
   .services__inner {
     padding-right: 110px;
     .h2-line:before {
@@ -92,11 +167,11 @@
   .services .anchor {
     right: -80px;
   }
-  .services__content{
-	  right: 0;
+  .services__content {
+    right: 0;
   }
-  .services__item .jumbotron{
-	  padding-right: 0;
+  .services__item .jumbotron {
+    padding-right: 0;
   }
   .services .slick-dots {
     top: auto;
@@ -135,13 +210,13 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-	order: 2;
-	padding-bottom: 60px;
+    order: 2;
+    padding-bottom: 60px;
   }
   .team-person {
     position: initial;
-	padding: 0 15px;
-	margin-bottom: 10px;
+    padding: 0 15px;
+    margin-bottom: 10px;
     &:hover {
       .team__image {
         width: 50px;
@@ -173,7 +248,7 @@
     }
   }
   .slider.slider__item.slider__item:after,
-  .slider .slider__item .slider__item-img.wrap_image{
+  .slider .slider__item .slider__item-img.wrap_image {
     height: 850px !important;
   }
   .study__inner {
