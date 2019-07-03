@@ -14,7 +14,7 @@ var gulp = require('gulp'), // Подключаем Gulp
  
 
 gulp.task('pug', function() {
-  return gulp.src("app/pages/*.pug")
+  return gulp.src("app/layout/*.pug")
       .pipe(pug({
 		  pretty:true
 	  }))
@@ -109,7 +109,8 @@ gulp.task('watch', function () {
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss')); // Наблюдение за scss файлами
 	gulp.watch('app/css/main.css', gulp.parallel('css-min'));
 	gulp.watch('app/modules/*.pug', gulp.parallel('pug'));
-	gulp.watch('app/pages/*.pug', gulp.parallel('pug'));
+	gulp.watch('app/components/*.pug', gulp.parallel('pug'));
+	gulp.watch('app/partials/*.pug', gulp.parallel('pug'));
 	gulp.watch('app/css/*.min.css', gulp.parallel('css'));
 	gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками

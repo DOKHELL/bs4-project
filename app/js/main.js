@@ -1,10 +1,11 @@
 function slider() {
 	$('.slider__items').slick({
 		arrows: true,
+		dots: true,
 		prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
 		nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
 	});
-	if (window.innerWidth >= 767) {
+	if (window.innerWidth >= 1200) {
 		$('.services__items').slick({
 			arrows: false,
 			dots: true,
